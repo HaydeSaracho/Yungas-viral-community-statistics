@@ -78,11 +78,7 @@ The script generates the following figures:
 
 R packages:
 
-`tidyverse`
-`vegan`
-`ggrepel`
-`iNEXT`
-`ggplot2`
+`tidyverse`, `vegan`, `ggrepel`, `iNEXT` y `ggplot2`
 
 ---
 
