@@ -27,3 +27,29 @@ The workflow performs the following analyses:
 ## Software requirements
 
 The analysis was performed in **R** using the following packages:
+tidyverse
+vegan
+iNEXT
+ggrepel
+ggplot2
+
+---
+
+## Input data format
+
+The script expects a tab-separated table with the following columns:
+
+| Column | Description |
+|------|------|
+| sample | microbial mat identifier |
+| contig_id | viral contig identifier |
+| contig_len | contig length |
+| mapped_reads | number of reads mapped to the contig |
+
+---
+
+## Notes
+
+This repository provides the statistical workflow used to generate the figures presented in the manuscript.
+
+Raw sequencing data and assemblies are available through the corresponding study resources.
