@@ -30,7 +30,7 @@ The script expects a tab-separated table:
 
 with the structure:
 
-sample contig_id contig_len mapped_reads
+`sample contig_id contig_len mapped_reads`
 
 Example:
 
