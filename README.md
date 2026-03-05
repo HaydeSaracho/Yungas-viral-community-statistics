@@ -26,7 +26,7 @@ The script performs:
 
 The script expects a tab-separated table:
 
-contig_counts_3samples.tsv
+`contig_counts_3samples.tsv`
 
 with the structure:
 
@@ -34,9 +34,9 @@ sample contig_id contig_len mapped_reads
 
 Example:
 
-HMNa NODE_1234_length_5000_cov_4.2 5000 124
-HMAb NODE_5678_length_3000_cov_3.1 3000 55
-HMR NODE_9012_length_6200_cov_5.0 6200 210
+`HMNa NODE_1234_length_5000_cov_4.2`
+`HMAb NODE_5678_length_3000_cov_3.1`
+`HMR NODE_9012_length_6200_cov_5.0`
 
 ---
 
@@ -46,9 +46,9 @@ The table is generated prior to the R workflow by mapping metagenomic reads to v
 
 Typical workflow:
 
-bowtie2-build viral_contigs.fasta index
-bowtie2 -x index -1 reads_R1.fq.gz -2 reads_R2.fq.gz | samtools sort -o sample.bam
-samtools idxstats sample.bam > sample.idxstats
+`bowtie2-build viral_contigs.fasta index`
+`bowtie2 -x index -1 reads_R1.fq.gz -2 reads_R2.fq.gz | samtools sort -o sample.bam`
+`samtools idxstats sample.bam > sample.idxstats`
 
 The idxstats outputs are merged into a single table.
 
@@ -58,11 +58,11 @@ The idxstats outputs are merged into a single table.
 
 The script generates the following figures:
 
-Fig1_AlphaDiversity
-Fig2_Rarefaction_iNEXT
-Fig3_RankAbundance
-Fig4_PCoA_BrayCurtis
-FigS1_Heatmap_topContigs_logCPM
+`Fig1_AlphaDiversity`
+`Fig2_Rarefaction_iNEXT`
+`Fig3_RankAbundance`
+`Fig4_PCoA_BrayCurtis`
+`FigS1_Heatmap_topContigs_logCPM`
 
 ---
 
@@ -70,11 +70,11 @@ FigS1_Heatmap_topContigs_logCPM
 
 R packages:
 
-tidyverse
-vegan
-ggrepel
-iNEXT
-ggplot2
+`tidyverse`
+`vegan`
+`ggrepel`
+`iNEXT`
+`ggplot2`
 
 ---
 
@@ -82,7 +82,7 @@ ggplot2
 
 Run in R:
 
-source("viral_community_statistics.R")
+`source("viral_community_statistics.R")`
 
 ---
 
