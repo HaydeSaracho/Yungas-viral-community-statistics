@@ -1,0 +1,13 @@
+name: yungas_virome
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - bowtie2=2.5.2
+  - samtools=1.19.2
+  - r-base
+  - r-dplyr
+  - r-tidyr
+  - r-ggplot2
+  - r-vegan
+  - r-ggrepel
