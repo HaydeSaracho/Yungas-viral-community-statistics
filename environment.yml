@@ -2,12 +2,19 @@ name: yungas_virome
 channels:
   - conda-forge
   - bioconda
+  - defaults
 dependencies:
+  # --- Mapping pipeline ---
   - bowtie2=2.5.2
   - samtools=1.19.2
-  - r-base
-  - r-dplyr
-  - r-tidyr
-  - r-ggplot2
-  - r-vegan
-  - r-ggrepel
+
+  # --- R base ---
+  - r-base=4.3.3
+
+  # --- R packages (pinned for reproducibility) ---
+  - r-dplyr=1.1.4
+  - r-tidyr=1.3.1
+  - r-ggplot2=3.5.1
+  - r-ggrepel=0.9.5
+  - r-vegan=2.6_4
+  - r-tibble=3.2.1      # implicit dependency of dplyr/tidyr, made explicit

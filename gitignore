@@ -1,0 +1,46 @@
+# =============================================================================
+# Raw and intermediate sequencing files
+# =============================================================================
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.sam
+
+# =============================================================================
+# Temporary depth / index files (reproducible from script)
+# =============================================================================
+bowtie2_index/
+bam/
+depth/
+
+# Bowtie2 mapping logs (intermediate QC — use samtools flagstat for final stats)
+*.bowtie2.log
+
+# =============================================================================
+# Generated figures (tracked — convenient for readers)
+# Uncomment the lines below if you prefer to exclude them
+# =============================================================================
+# results/figures/
+# *.png
+# *.pdf
+
+# =============================================================================
+# R session / user files
+# =============================================================================
+.Rhistory
+.RData
+.Rproj.user/
+
+# =============================================================================
+# OS / editor
+# =============================================================================
+.DS_Store
+Thumbs.db
+nohup.out
+*.swp
+*.swo
+.vscode/
+.idea/
